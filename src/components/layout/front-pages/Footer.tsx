@@ -5,7 +5,6 @@ import Grid from '@mui/material/Grid2'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Chip from '@mui/material/Chip'
-import IconButton from '@mui/material/IconButton'
 
 // Third-party Imports
 import classnames from 'classnames'
@@ -163,42 +162,6 @@ const Footer = ({ mode }: { mode: Mode }) => {
               </div>
             </Grid>
           </Grid>
-        </div>
-      </div>
-      <div className='bg-[#211B2C]'>
-        <div
-          className={classnames(
-            'flex flex-wrap items-center justify-center sm:justify-between gap-4 plb-[15px]',
-            frontCommonStyles.layoutSpacing
-          )}
-        >
-          <Typography className='text-white' variant='body2'>
-            <span>{`© ${new Date().getFullYear()}, Made with `}</span>
-            <span>{`❤️`}</span>
-            <span>{` by `}</span>
-            <Link href='https://pixinvent.com/' target='_blank' className='font-medium text-white'>
-              Pixinvent
-            </Link>
-          </Typography>
-          <div className='flex gap-1.5 items-center'>
-            <IconButton component={Link} size='small' href='https://github.com/pixinvent' target='_blank'>
-              <i className='tabler-brand-github-filled text-white text-lg' />
-            </IconButton>
-            <IconButton component={Link} size='small' href='https://www.facebook.com/pixinvents/' target='_blank'>
-              <i className='tabler-brand-facebook-filled text-white text-lg' />
-            </IconButton>
-            <IconButton component={Link} size='small' href='https://x.com/pixinvents' target='_blank'>
-              <i className='tabler-brand-twitter-filled text-white text-lg' />
-            </IconButton>
-            <IconButton
-              component={Link}
-              size='small'
-              href='https://www.youtube.com/channel/UClOcB3o1goJ293ri_Hxpklg'
-              target='_blank'
-            >
-              <i className='tabler-brand-youtube-filled text-white text-lg' />
-            </IconButton>
-          </div>
         </div>
       </div>
     </footer>
