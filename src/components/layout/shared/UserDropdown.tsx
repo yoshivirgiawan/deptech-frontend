@@ -26,6 +26,8 @@ import { toast } from 'react-toastify'
 // Type Imports
 import { useMutation, useQuery } from '@tanstack/react-query'
 
+import { CircularProgress } from '@mui/material'
+
 import type { Locale } from '@configs/i18n'
 
 // Hook Imports
@@ -35,7 +37,6 @@ import { useSettings } from '@core/hooks/useSettings'
 import { getLocalizedUrl } from '@/utils/i18n'
 import { authService } from '@/services/authService'
 import authConfig from '@/configs/auth'
-import { CircularProgress } from '@mui/material'
 
 // Styled component for badge content
 const BadgeContentSpan = styled('span')({

@@ -1,5 +1,8 @@
 {
   "navigation": {
+    "admins": "Admins",
+    "employees": "Employees",
+    "leaveRecords": "Leave Records",
     "dashboards": "Dashboards",
     "crm": "CRM",
     "analytics": "Analytics",

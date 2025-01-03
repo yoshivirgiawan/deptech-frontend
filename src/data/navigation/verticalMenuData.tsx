@@ -3,6 +3,18 @@ import type { VerticalMenuDataType } from '@/types/menuTypes'
 import type { getDictionary } from '@/utils/getDictionary'
 
 const verticalMenuData = (dictionary: Awaited<ReturnType<typeof getDictionary>>): VerticalMenuDataType[] => [
+  {
+    label: dictionary['navigation'].appsPages,
+    isSection: true,
+    children: [
+      {
+        label: dictionary['navigation'].admins,
+        icon: 'tabler-lock',
+        href: '/admins'
+      }
+    ]
+  },
+
   // This is how you will normally render submenu
   {
     label: dictionary['navigation'].dashboards,
